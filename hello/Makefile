@@ -31,6 +31,8 @@ run:
 .PHONY: check_style
 check_style:
 	$(PY) $(PYFLAGS) $(FLAKE) $(FLAKEFLAGS) hello.py
+	$(PY) $(PYFLAGS) $(FLAKE) $(FLAKEFLAGS) test_hello.py
+	$(PY) $(PYFLAGS) $(FLAKE) $(FLAKEFLAGS) test_unittest.py
 
 .PHONY: lint
 lint:

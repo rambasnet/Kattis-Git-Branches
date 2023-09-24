@@ -1,4 +1,4 @@
-"""Test module for hello.py 
+"""Test module for hello.py.
 """
 
 import unittest
