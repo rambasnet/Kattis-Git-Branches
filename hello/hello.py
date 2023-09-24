@@ -1,20 +1,47 @@
-""" Kattis hello problem.
-
+"""Hello World Program using OOP.
 """
 
+from __future__ import annotations
+
 __author__ = "Ram Basnet"
-__date__ = "Sept. 23, 2023"
+__date__ = "2023/1/1"
+__license__ = "MIT"
+__version__ = "0.1.0"
+__maintainer__ = "Ram Basnet"
 
 
-def answer() -> str:
-    """Returns 'Hello World!' string."""
-    return "Hello World!"
+class HelloWorld():
+    """
+    Hello World Class
+    """
 
+    def __init__(self) -> None:
+        """
+        Constructor
+        """
+        self._message = "Hello World!"
 
-def main() -> None:
-    """Prints 'Hello World!' string."""
-    print(answer())
+    def print_message(self) -> None:
+        """
+        Prints the message
+        """
+        print(self._message)
 
+    def get_message(self) -> str:
+        """
+        Returns the message - using getter method
 
-if __name__ == "__main__":
-    main()
+        Returns:
+                self._message (str): Message stored in the object
+        """
+        return self._message
+
+    @property
+    def message(self) -> str:
+        """
+        Returns the message - using getter property
+
+        Returns:
+                self._message (str): Message stored in the object
+        """
+        return self._message

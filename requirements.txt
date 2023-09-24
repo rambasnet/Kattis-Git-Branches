@@ -4,3 +4,8 @@ flake8
 pylint
 bandit
 black
+jupyter
+pymongo[srv]
+hypothesis
+lxml
+pdoc
