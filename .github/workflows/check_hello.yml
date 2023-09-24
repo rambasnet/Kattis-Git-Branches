@@ -38,7 +38,7 @@ jobs:
         mypy hello/hello.py
     - name: Test with pytest
       run: |
-        pytest test_unittest.py
+        pytest hello/test_unittest.py
 
 
         
