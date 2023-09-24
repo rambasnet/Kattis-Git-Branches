@@ -8,7 +8,7 @@ PYLINT = pylint
 PYLINTFLAGS = --max-line-length=100
 
 .PHONY: all
-all: check_style lint black check_security unittest localtest run submit
+all: check_style lint black check_security unittest localtest run submit clean
 
 
 .PHONY: unittest
@@ -22,7 +22,7 @@ localtest:
 
 .PHONY: clean
 clean:
-	rm -rf __pycache__ .pytest_cache
+	rm -rf __pycache__ .pytest_cache .mypy_cache
 
 .PHONY: run
 run:
