@@ -14,4 +14,5 @@ WORKDIR /app
 
 RUN echo export PATH='"'/app/bin:/app/bin/$(uname -s)-$(uname -m):/app:/app/kattis-cli:${PATH}'"' >> /root/.bashrc
 
+
 ENTRYPOINT ["/bin/bash","-i","-c","\"$@\"","--"]

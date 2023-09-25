@@ -115,10 +115,9 @@ else
     exit 1
 fi
 
-
 if [ ${#args[@]} -eq 0 ]
 then
-    args=("bash" "-c" "cd $GUEST_DIR; bash git-authenticate.sh; bash -i")
+    args=("bash" "-c" "cd $GUEST_DIR; bash git-authenticate.sh; cp .kattisrc /root; bash -i")
 fi
 
 echo "$container run '$CONTAINER_TAG' (mounting host '$HOST_DIR' as '$GUEST_DIR'):" \
