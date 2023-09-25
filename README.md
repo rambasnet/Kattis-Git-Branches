@@ -1,8 +1,8 @@
 # OOP and Design Patterns
 
-- Demos problems with Makefile, unittest and CI/CD
+- Demo Solutions with Makefile, unittest and CI/CD
 
-## How to run demos
+## How to run Demos
 
 - run docker desktop
 - download/clone this repo
@@ -12,4 +12,12 @@
 
 ```bash
 bash run.sh
+```
+
+## Submit to Kattis
+
+- make sure one of the file is named main.py
+
+```bash
+    kattis -f -p <problem name> main.py [other .py files]
 ```

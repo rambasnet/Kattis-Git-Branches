@@ -1,0 +1,3 @@
+#!/bin/sh
+#echo "${BASH_SOURCE%/*}"
+python "/app/kattis-cli/submit.py" "$@"
